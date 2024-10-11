@@ -31,37 +31,24 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        body: NestedScrollView(
-          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-            return [
-              SliverAppBar(
-                expandedHeight: 570, // Adjust as needed
-                flexibleSpace: FlexibleSpaceBar(
-                  background: Column(
-                    children: [
-                      buildTop(),
-                      const SizedBox(height: 100),
-                      buildContent(),
-                      const SizedBox(height: 20),
-                    ],
-                  ),
+        body: ListView(
+          children: [
+            buildTop(),
+            const SizedBox(height: 80),
+            buildContent(),
+            const SizedBox(height: 20),
+            const TabBar(
+              tabs: [
+                Tab(
+                  icon: Icon(Icons.grid_view_rounded),
                 ),
-                pinned: true,
-                bottom: const TabBar(
-                  tabs: [
-                    Tab(
-                      icon: Icon(Icons.grid_view_rounded),
-                    ),
-                    Tab(
-                      icon: Icon(Icons.info_outline_rounded),
-                    ),
-                  ],
+                Tab(
+                  icon: Icon(Icons.info_outline_rounded),
                 ),
-              ),
-            ];
-          },
-          body:
-              buildTabBarView(), // The Tab content will scroll together with the rest
+              ],
+            ),
+            SizedBox(height: 450, child: buildTabBarView()),
+          ],
         ),
       ),
     );

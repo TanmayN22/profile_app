@@ -38,6 +38,7 @@ Widget buildContent() {
     padding: EdgeInsets.fromLTRB(30, 0, 15, 0),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           'Tanmay Nayak',
