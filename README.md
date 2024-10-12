@@ -1,16 +1,7 @@
-# profile_app
+# Profile app
 
-A new Flutter project.
+https://github.com/user-attachments/assets/54087e10-8918-40de-a1d5-7227a4773ac0
 
-## Getting Started
+# Info 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Created a profile app that links all of my social handles
